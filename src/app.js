@@ -7,8 +7,6 @@ const app = express();
 const publicPath = path.resolve(__dirname, 'public');
 app.use(express.static('public'));
 
-const port = process.env.PORT || 3001
-app.listen(port, () => console.log('El servidor esta corriendo en: ${port}'));
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './views/home.html'))
@@ -22,10 +20,8 @@ app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, './views/login.html'))
 });
 
-// app.post('/login', (req, res) => {
-//     res.sendFile(path.join(__dirname, './views/index.html'))
-// });
 
-// app.post('/registro', (req, res) => {
-//     res.sendFile(path.join(__dirname, './views/index.html'))
-// });
+
+app.listen(3000, () =>{
+    console.log('Server on port 3000');
+});
