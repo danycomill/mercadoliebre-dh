@@ -1,0 +1,180 @@
+:root{
+    --mercado-color: #fff159;
+    --body-grey: #f2f2f2;
+    --ofert-green: #009902;
+    --boton-blue: #3483fa;
+    --color-texto: rgb(51, 51, 51);
+    --background-form: #dcdcdc;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: var(--body-grey);
+}
+body{
+    font-size: 1.6rem;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+header{
+    background-color:  var(--mercado-color);
+}
+
+header .logoPrincipal{
+    width: 93rem;
+    padding: 30px;
+    padding-left: 55rem;
+    flex-wrap: wrap;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+  }
+  
+  .container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #ffff;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+  }
+  
+  
+  label {
+    margin-bottom: 6px;
+  }
+  
+  select,
+  button {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  
+  span{
+    color: red;
+    margin: 1.5rem;
+    font-weight: bolder;
+  }
+  
+  input{
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #272727;
+    border-radius: 8px;
+  }
+  
+  .blue-button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  
+  
+
+
+
+
+
+
+
+
+/* Estilos para pantallas más grandes */
+@media screen and (min-width: 700px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px; /* Ajusta el espaciado*/
+  }
+  
+  .baner-footer {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    align-items: center;
+    max-width: 1200px; /* Establece un ancho máximo para el contenido */
+    width: 100%;
+  }
+
+  .baner-footer .p-azul a{
+    color: var(--boton-blue);
+    text-decoration: none;
+  }
+
+
+  .baner-footer .p-azul{
+    padding-top: 15px;
+  }
+  
+  .pago-con-tarjet-o-efectivo,
+  .envio-gratis,
+  .seguridad {
+    text-align: center; /* Centra el contenido dentro de cada sección */
+    flex: 1; /* Distribuye el espacio disponible entre las secciones */
+    padding: 20px; /* Ajusta el espaciado dentro de cada sección */
+  }
+
+footer .baner-footer h3{
+    padding-top:  3rem;
+}
+
+footer .baner-footer p{
+    padding-top: 1.3rem;
+}
+
+
+footer{
+    color: var(--color-texto);
+}
+
+
+/* ESTILOS PARA VERSIÓN MÓVIL */
+/* Los estilos mobile se encuentran en el css respectivo */

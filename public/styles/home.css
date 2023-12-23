@@ -1,0 +1,240 @@
+:root{
+    --mercado-color: #fff159;
+    --body-grey: #e8e8e8;
+    --ofert-green: #009902;
+    --boton-blue: #3483fa;
+    --color-texto: rgb(51, 51, 51);
+}
+
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    font-size: 62.5%;
+    background-color: var(--body-grey);
+}
+body{
+    font-size: 1.6rem;
+}
+
+
+
+/* ESTILOS DEL HEADDER */
+
+header{
+    background-color:  var(--mercado-color);
+}
+
+header .logoPrincipal{
+    width: 93rem;
+    padding: 30px;
+    padding-left: 55rem;
+    flex-wrap: wrap;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* ESTILOS DE BARRA DE OPCIONES */
+
+
+
+
+
+.header nav ul {
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.header nav ul li{
+    margin: 20px;
+}
+
+.header nav ul li a{
+    text-decoration: none;
+    color: var(--color-texto);
+    font-size: 1.5rem;
+}
+
+
+
+.header nav ul li .btn-form{
+    font-weight: bolder;
+}
+
+
+
+
+/* ESTILOS DE IMG SECUNDARIA */
+
+
+
+
+
+header .banerImg{
+    width: 100%;
+}
+
+
+
+/* ESTILOS BANER - METODOS DE PAGO */
+
+/* ESTILOS DE TITULO */
+
+
+main div{
+    display: flex;
+    /* text-align: center;
+    justify-content: center; */
+    padding-left: 24rem;
+    margin-top: 3rem;
+    color: var(--color-texto);
+}
+
+
+
+
+/* ESTILOS DE PRODUCTOS */
+
+
+main{
+    background-color: var(--body-grey);
+}
+
+main .productos{
+    padding: 3%;
+    /* padding-left: 13%; */
+    text-align: center;
+}
+
+
+
+main .productos .productoimg{
+    height: 420px;
+    display: inline-block;
+    justify-content: center;
+    padding-left: 1%;
+    margin-inline: 2rem;
+    margin-block: 2rem;
+
+    /* Bloque entero */
+
+    background-color: #ffff;
+    border-radius: 10px;
+    border: 1px solid var(--body-grey);
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+/* main .blog .box{
+    width: 100%;
+    height: 40rem;
+    margin: 20px;
+    border-radius: 6px;
+    
+} */
+
+main .productos .productoimg:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.556);
+    transform: translateY(-6%);
+}
+
+main .productos .productoimg img{
+    padding-top: 30px;
+    width: 25rem;
+    border-radius: 10px;
+}
+
+
+
+/* ESTILOS - TEXTO DE PRODUCTOS */
+
+
+
+main .productos .productoimg h3{
+    padding-top: 8px;
+}
+
+main .productos .productoimg p{
+    padding-top: 10px;
+}
+
+main .productos .productoimg .price{
+  font-weight:bold;
+  font-size: 2.3rem;
+}
+
+
+main .productos .productoimg .envio{
+    color: var(--ofert-green);
+}
+
+
+/* ESTILOS DEL FOOTER */
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px; /* Ajusta el espaciado*/
+  }
+  
+  .baner-footer {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos horizontalmente */
+    align-items: center;
+    max-width: 1200px; /* Establece un ancho máximo para el contenido */
+    width: 100%;
+  }
+
+  .baner-footer .p-azul a{
+    color: var(--boton-blue);
+    text-decoration: none;
+  }
+
+
+  .baner-footer .p-azul{
+    padding-top: 15px;
+  }
+  
+  .pago-con-tarjet-o-efectivo,
+  .envio-gratis,
+  .seguridad {
+    text-align: center; /* Centra el contenido dentro de cada sección */
+    flex: 1; /* Distribuye el espacio disponible entre las secciones */
+    padding: 20px; /* Ajusta el espaciado dentro de cada sección */
+  }
+
+footer .baner-footer h3{
+    padding-top:  3rem;
+}
+
+footer .baner-footer p{
+    padding-top: 1.3rem;
+}
+
+
+footer{
+    color: var(--color-texto);
+}
+
+
+/* ESTILOS PARA VERSIÓN MÓVIL */
+/* Los estilos mobile se encuentran en el css respectivo */
